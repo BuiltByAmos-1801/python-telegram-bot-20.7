@@ -1,0 +1,4 @@
+python-telegram-bot
+qrcode[pil]
+openai
+google-genai
