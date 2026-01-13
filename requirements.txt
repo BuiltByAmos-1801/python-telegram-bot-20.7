@@ -1,4 +1,5 @@
-python-telegram-bot
+python-telegram-bot[job-queue]==20.7
 qrcode[pil]
 openai
+
 google-genai
