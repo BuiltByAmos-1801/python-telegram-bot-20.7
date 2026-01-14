@@ -45,7 +45,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         [InlineKeyboardButton("💰 Wallet", callback_data="wallet"), InlineKeyboardButton("🔗 Refer", callback_data="referral")],
         [InlineKeyboardButton("💳 Set UPI ID", callback_data="set_upi")]
     ]
-    if os.path.exists('images/welcome.jpg'):
+    if os.path.exists('welcome.jpg'):
         await update.message.reply_photo(
             open('images/welcome.jpg', 'rb'),
             caption="🤖 Welcome to AI + Online Earning Bot!\n\n"
@@ -503,3 +503,4 @@ app.job_queue.run_daily(send_expiry_reminders, time=time(hour=9, minute=0))
 
 print("🤖 Bot Running...")
 app.run_polling()
+
