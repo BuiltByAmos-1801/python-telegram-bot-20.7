@@ -47,7 +47,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     ]
     if os.path.exists('welcome.jpg'):
         await update.message.reply_photo(
-            open('images/welcome.jpg', 'rb'),
+            open('welcome.jpg', 'rb'),
             caption="🤖 Welcome to AI + Online Earning Bot!\n\n"
             "Here you will find:\n"
             "- Daily AI Prompts\n"
